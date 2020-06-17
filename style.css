@@ -12,7 +12,7 @@ a{
 }
 
 .button-one{
-  background-color: white;
+  /* background-color: white; */
   width:20px;
   height:20px;
   position: fixed;
@@ -21,8 +21,6 @@ a{
   z-index: 999;
   border:1px solid black;
   border-radius: 50;
-  /* background-image: linear-gradient(to right, yellow , green); */
-  /* background-color: lightgrey; */
   background-color: #ffffcc;
 }
 
@@ -35,17 +33,15 @@ a{
   width:20px;
   height:20px;
   position: fixed;
-  /* bottom: 42px; */
-  bottom:10px;
-  right:50px;
-  /* top:20px; */
-  /* right:20px; */
+  bottom: 10px;
+  right:10px;
   z-index: 999;
   border:1px solid black;
-  border-radius: 50%;
-  /* background-color: lightgrey; */
+  border-radius: 50;
+}
+
+.button-two:hover{
   background-color: #ffffcc;
-  /* background-image: linear-gradient(to right, red , yellow); */
 }
 
 .cake{
@@ -61,4 +57,46 @@ a{
   top:10%;
   right:35%;
 
+}
+
+.flame{
+  animation: flicker 1s ease-in-out alternate infinite;
+}
+
+@keyframes flicker {
+    0% {
+        transform: skewX(5deg);
+        box-shadow:
+            0 0 10px rgba(orange, 0.2),
+            0 0 20px rgba(orange, 0.2),
+            0 0 60px rgba(orange, 0.2),
+            0 0 80px rgba(orange, 0.2) }
+    25% {
+        transform: skewX(-5deg);
+        box-shadow:
+            0 0 10px rgba(orange, 0.5),
+            0 0 20px rgba(orange, 0.5),
+            0 0 60px rgba(orange, 0.5),
+            0 0 80px rgba(orange, 0.5) }
+    50% {
+        transform: skewX(10deg);
+        box-shadow:
+            0 0 10px rgba(orange, 0.3),
+            0 0 20px rgba(orange, 0.3),
+            0 0 60px rgba(orange, 0.3),
+            0 0 80px rgba(orange, 0.3) }
+    75% {
+        transform: skewX(-10deg);
+        box-shadow:
+            0 0 10px rgba(orange, 0.4),
+            0 0 20px rgba(orange, 0.4),
+            0 0 60px rgba(orange, 0.4),
+            0 0 80px rgba(orange, 0.4) }
+    100% {
+        transform: skewX(5deg);
+        box-shadow:
+            0 0 10px rgba(orange, 0.5),
+            0 0 20px rgba(orange, 0.5),
+            0 0 60px rgba(orange, 0.5),
+            0 0 80px rgba(orange, 0.5) }
 }
